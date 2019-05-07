@@ -1,0 +1,5 @@
+@import "./weui/weui.wxss";
+
+.padding {
+    padding: 16px;
+}

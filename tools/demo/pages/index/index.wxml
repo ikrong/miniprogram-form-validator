@@ -1,0 +1,45 @@
+<view class="page">
+    <form-validator id="form" formGroup="{{formValidators}}" formData="{{formData}}">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">qq</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="inputHandle" id="qq" placeholder="请输入qq" />
+                </view>
+            </view>
+            <view class="error-tip">
+                <form-tip name="qq"></form-tip>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">手机号</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="inputHandle" id="phone" placeholder="请输入手机号" />
+                </view>
+            </view>
+            <view class="error-tip">
+                <form-tip name="phone"></form-tip>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="inputHandle" id="name" placeholder="请输入姓名" />
+                </view>
+            </view>
+            <view class="error-tip">
+                <form-tip name="name"></form-tip>
+            </view>
+        </view>
+    </form-validator>
+
+    <view class="page__bd page__bd_spacing padding">
+        <button class="weui-btn" type="primary" bindtap="validator">
+            提交
+        </button>
+    </view>
+</view>
